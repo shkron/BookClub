@@ -36,7 +36,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
-    [self loadArrayWithFetchRequestFromCoreData];
+    [self loadArrayWithFetchRequestFromCoreData:@" "];
 }
 
 
@@ -55,38 +55,26 @@
     return cell;
 }
 
-//- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText;
-//{
-//    searchText = self.searchBar.text;
-//
-//    if (searchText.length == 0)
-//    {
-//        self.tableViewArray = [self.originalDataArray mutableCopy];
-//    }
-//    else
-//    {
-//        [self.tableViewArray removeAllObjects];
-//        for (int i = 0; i < self.originalDataArray.count; i++)
-//
-//            //        for (NSDictionary *dict in self.originalDataArray)
-//        {
-//            NSDictionary *dict = [[NSDictionary alloc] init];
-//            dict = self.originalDataArray[i];
-//            if ([[dict[@"stAddress1"] lowercaseString] containsString:[searchText lowercaseString]])
-//            {
-//                [self.tableViewArray addObject:dict];
-//            }
-//        }
-//
-//    }
-//    
-//    [self.tableView reloadData];
-//}
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText;
+{
+//    searchText
+
+    if (searchText.length == 0)
+    {
+        [self loadArrayWithFetchRequestFromCoreData:@" "];
+    }
+    else
+    {
+        [self loadArrayWithFetchRequestFromCoreData:searchText];
+    }
+    
+    [self.tableView reloadData];
+}
 
 
 //MARK: custom methods
 
--(void)loadArrayWithFetchRequestFromCoreData
+-(void)loadArrayWithFetchRequestFromCoreData:(NSString *)searchText
 {
     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Friend"];
 
@@ -97,7 +85,7 @@
     request.sortDescriptors = @[sortByName];
 
 //    mySQL format (for "filter")
-    request.predicate = [NSPredicate predicateWithFormat:@"isFriend == YES"];
+    request.predicate = [NSPredicate predicateWithFormat:@"(isFriend == YES) AND (name CONTAINS [cd] %@)", searchText];
 //    executing fetch request for the entity "Friend"
     self.tableViewArray = [self.moc executeFetchRequest:request error:nil];
     [self.tableView reloadData];
