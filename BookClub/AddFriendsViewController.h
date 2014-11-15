@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddFriendsViewController.h
 //  BookClub
 //
 //  Created by Alex on 11/12/14.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AddFriendsViewController : UIViewController
+@property NSMutableArray *selectedFriendsArray;
 
 @end
-

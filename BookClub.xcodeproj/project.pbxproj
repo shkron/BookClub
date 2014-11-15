@@ -10,11 +10,18 @@
 		FA2DC7011A140CDE00FE0272 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DC7001A140CDE00FE0272 /* main.m */; };
 		FA2DC7041A140CDE00FE0272 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DC7031A140CDE00FE0272 /* AppDelegate.m */; };
 		FA2DC7071A140CDE00FE0272 /* BookClub.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA2DC7051A140CDE00FE0272 /* BookClub.xcdatamodeld */; };
-		FA2DC70A1A140CDE00FE0272 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DC7091A140CDE00FE0272 /* ViewController.m */; };
+		FA2DC70A1A140CDE00FE0272 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DC7091A140CDE00FE0272 /* FriendsViewController.m */; };
 		FA2DC70D1A140CDE00FE0272 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2DC70B1A140CDE00FE0272 /* Main.storyboard */; };
 		FA2DC70F1A140CDE00FE0272 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2DC70E1A140CDE00FE0272 /* Images.xcassets */; };
 		FA2DC7121A140CDE00FE0272 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2DC7101A140CDE00FE0272 /* LaunchScreen.xib */; };
 		FA2DC71E1A140CDE00FE0272 /* BookClubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DC71D1A140CDE00FE0272 /* BookClubTests.m */; };
+		FA2DC7291A1412D100FE0272 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DC7281A1412D100FE0272 /* Book.m */; };
+		FA2DC72C1A1412D200FE0272 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DC72B1A1412D200FE0272 /* Comment.m */; };
+		FA2DC72F1A1412D200FE0272 /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DC72E1A1412D200FE0272 /* Friend.m */; };
+		FA2DC7331A14175700FE0272 /* AddFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2DC7321A14175700FE0272 /* AddFriendsViewController.m */; };
+		FA50487A1A1682ED00941539 /* FriendDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5048791A1682ED00941539 /* FriendDetailViewController.m */; };
+		FA50487D1A16B08900941539 /* AddBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA50487C1A16B08900941539 /* AddBookViewController.m */; };
+		FA5048801A16B12F00941539 /* CommentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA50487F1A16B12F00941539 /* CommentsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,14 +41,28 @@
 		FA2DC7021A140CDE00FE0272 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA2DC7031A140CDE00FE0272 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FA2DC7061A140CDE00FE0272 /* BookClub.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookClub.xcdatamodel; sourceTree = "<group>"; };
-		FA2DC7081A140CDE00FE0272 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FA2DC7091A140CDE00FE0272 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FA2DC7081A140CDE00FE0272 /* FriendsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
+		FA2DC7091A140CDE00FE0272 /* FriendsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 		FA2DC70C1A140CDE00FE0272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA2DC70E1A140CDE00FE0272 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA2DC7111A140CDE00FE0272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FA2DC7171A140CDE00FE0272 /* BookClubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookClubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2DC71C1A140CDE00FE0272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2DC71D1A140CDE00FE0272 /* BookClubTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookClubTests.m; sourceTree = "<group>"; };
+		FA2DC7271A1412D100FE0272 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		FA2DC7281A1412D100FE0272 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		FA2DC72A1A1412D200FE0272 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		FA2DC72B1A1412D200FE0272 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		FA2DC72D1A1412D200FE0272 /* Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		FA2DC72E1A1412D200FE0272 /* Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
+		FA2DC7311A14175700FE0272 /* AddFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendsViewController.h; sourceTree = "<group>"; };
+		FA2DC7321A14175700FE0272 /* AddFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendsViewController.m; sourceTree = "<group>"; };
+		FA5048781A1682ED00941539 /* FriendDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDetailViewController.h; sourceTree = "<group>"; };
+		FA5048791A1682ED00941539 /* FriendDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDetailViewController.m; sourceTree = "<group>"; };
+		FA50487B1A16B08900941539 /* AddBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBookViewController.h; sourceTree = "<group>"; };
+		FA50487C1A16B08900941539 /* AddBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBookViewController.m; sourceTree = "<group>"; };
+		FA50487E1A16B12F00941539 /* CommentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentsViewController.h; sourceTree = "<group>"; };
+		FA50487F1A16B12F00941539 /* CommentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +106,21 @@
 			children = (
 				FA2DC7021A140CDE00FE0272 /* AppDelegate.h */,
 				FA2DC7031A140CDE00FE0272 /* AppDelegate.m */,
-				FA2DC7081A140CDE00FE0272 /* ViewController.h */,
-				FA2DC7091A140CDE00FE0272 /* ViewController.m */,
+				FA2DC7081A140CDE00FE0272 /* FriendsViewController.h */,
+				FA2DC7091A140CDE00FE0272 /* FriendsViewController.m */,
+				FA2DC7311A14175700FE0272 /* AddFriendsViewController.h */,
+				FA2DC7321A14175700FE0272 /* AddFriendsViewController.m */,
+				FA5048781A1682ED00941539 /* FriendDetailViewController.h */,
+				FA5048791A1682ED00941539 /* FriendDetailViewController.m */,
+				FA50487B1A16B08900941539 /* AddBookViewController.h */,
+				FA50487C1A16B08900941539 /* AddBookViewController.m */,
+				FA50487E1A16B12F00941539 /* CommentsViewController.h */,
+				FA50487F1A16B12F00941539 /* CommentsViewController.m */,
 				FA2DC70B1A140CDE00FE0272 /* Main.storyboard */,
 				FA2DC70E1A140CDE00FE0272 /* Images.xcassets */,
 				FA2DC7101A140CDE00FE0272 /* LaunchScreen.xib */,
 				FA2DC7051A140CDE00FE0272 /* BookClub.xcdatamodeld */,
+				FA2DC7301A1412D700FE0272 /* Model */,
 				FA2DC6FE1A140CDE00FE0272 /* Supporting Files */,
 			);
 			path = BookClub;
@@ -120,6 +150,19 @@
 				FA2DC71C1A140CDE00FE0272 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA2DC7301A1412D700FE0272 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA2DC72D1A1412D200FE0272 /* Friend.h */,
+				FA2DC72E1A1412D200FE0272 /* Friend.m */,
+				FA2DC72A1A1412D200FE0272 /* Comment.h */,
+				FA2DC72B1A1412D200FE0272 /* Comment.m */,
+				FA2DC7271A1412D100FE0272 /* Book.h */,
+				FA2DC7281A1412D100FE0272 /* Book.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +265,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2DC7331A14175700FE0272 /* AddFriendsViewController.m in Sources */,
+				FA2DC7291A1412D100FE0272 /* Book.m in Sources */,
+				FA5048801A16B12F00941539 /* CommentsViewController.m in Sources */,
+				FA2DC72F1A1412D200FE0272 /* Friend.m in Sources */,
+				FA50487D1A16B08900941539 /* AddBookViewController.m in Sources */,
+				FA2DC72C1A1412D200FE0272 /* Comment.m in Sources */,
+				FA50487A1A1682ED00941539 /* FriendDetailViewController.m in Sources */,
 				FA2DC7041A140CDE00FE0272 /* AppDelegate.m in Sources */,
 				FA2DC7071A140CDE00FE0272 /* BookClub.xcdatamodeld in Sources */,
-				FA2DC70A1A140CDE00FE0272 /* ViewController.m in Sources */,
+				FA2DC70A1A140CDE00FE0272 /* FriendsViewController.m in Sources */,
 				FA2DC7011A140CDE00FE0272 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +466,7 @@
 				FA2DC7231A140CDE00FE0272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA2DC7241A140CDE00FE0272 /* Build configuration list for PBXNativeTarget "BookClubTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +475,7 @@
 				FA2DC7261A140CDE00FE0272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
